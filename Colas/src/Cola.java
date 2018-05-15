@@ -41,4 +41,14 @@ public class Cola {
         if(frente == MAX)   frente = 1;
         else frente = frente + 1;
     }
+    public void insertar(int x)
+    {
+        if(!colaLlena())
+        {
+            if(fin == MAX)  fin = 1;
+            else    fin = fin+1;
+
+            elem[fin] = x;
+        }
+    }
 }
